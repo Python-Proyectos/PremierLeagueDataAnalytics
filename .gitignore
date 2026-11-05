@@ -1,0 +1,42 @@
+# ==========================================
+# PREMIER LEAGUE DATA ANALYTICS
+# Configuración de Git
+# ==========================================
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Configuración de PyCharm
+.idea/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Cachés de pruebas
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Dataset original de la Premier League
+/data/soccer18-19.csv
