@@ -1,6 +1,7 @@
 from src.data_loader import cargar_datos
 from src.data_cleaning import limpiar_datos
 from src.data_validation import validar_datos
+from src.analysis import calcular_clasificacion
 
 def main():
 
@@ -48,6 +49,13 @@ def main():
 
     # Validar integridad de los datos
     validar_datos(df_limpio)
+
+    # Calcular la clasificación de la Premier League
+    print("\n=== CLASIFICACIÓN PREMIER LEAGUE 2018-2019 ===")
+
+    clasificacion = calcular_clasificacion(df_limpio)
+
+    print(clasificacion.to_string(index=False))
 
 if __name__ == "__main__":
     main()
